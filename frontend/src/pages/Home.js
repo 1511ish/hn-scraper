@@ -76,7 +76,7 @@ const Home = () => {
       {!user && (
         <div className="login-prompt">
           <p>
-            <a href="/">Login</a> or <a href="">Register</a> to
+            <a href="/login">Login</a> or <a href="/register">Register</a> to
             bookmark stories.
           </p>
         </div>

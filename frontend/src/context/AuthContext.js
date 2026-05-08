@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { loginUser, registerUser, getMe } from '../api';
 
 const AuthContext = createContext(null);
 

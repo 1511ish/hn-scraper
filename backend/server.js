@@ -14,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/stories', require('./routes/storyRoutes'));
 app.use('/api/scrape', require('./routes/scraperRoutes'));
 

@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
   const { user, logout } = useAuth();
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
@@ -30,8 +30,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <Link to="/">Login</Link>
-            <Link to="/" className="btn-register">
+            <Link to="/login">Login</Link>
+            <Link to="/register" className="btn-register">
               Register
             </Link>
           </>

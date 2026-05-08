@@ -13,6 +13,10 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Auth
+export const registerUser = (data) => api.post('/auth/register', data);
+export const loginUser = (data) => api.post('/auth/login', data);
+export const getMe = () => api.get('/auth/me');
 
 // Stories
 export const fetchStories = () => api.get('/stories');
