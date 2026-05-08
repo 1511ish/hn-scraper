@@ -45,6 +45,13 @@ const Home = () => {
           <h1>Top Stories</h1>
           <p className="page-subtitle">Latest from Hacker News</p>
         </div>
+        <button
+          className="btn-scrape"
+          onClick={handleScrape}
+          disabled={scraping}
+        >
+          {scraping ? 'Scraping...' : '↻ Refresh Stories'}
+        </button>
       </div>
 
       {error && <div className="error-banner">{error}</div>}
